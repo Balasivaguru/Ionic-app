@@ -1,0 +1,18 @@
+
+
+
+<img id="pic" [src]="image" style="height:30%;width:auto;margin:0% 30%">
+<form [formGroup]="uploads">
+<label for="contests" id="contestslab">Upload to the contest:</label>
+<select id="contests"   formControlName="contestName">
+    <option value="contest1">contest 1</option>
+    <option value="contest2">contest 2</option>
+    <option value="contest3">contest 3</option>
+</select>
+<label for="desc" id="desclab" >What's on your mind:</label>
+<textarea id="desc" formControlName="description"></textarea>
+<button (click)="upload()" id="upload">upload</button>
+</form>
+
+
+<button (click)="upload()" id="upload">upload</button>

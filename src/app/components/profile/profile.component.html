@@ -1,0 +1,35 @@
+<ul class="timeline-data">
+    <li *ngFor="let timeline of photos.data">
+      <div class="timeline-post">
+        <div class="timeline-header">
+          <div id="ratee" style="font-size: large">
+            {{timeline.rates}}</div>
+          <div class="bluecircle" >
+            <div class="whitecircle">
+
+                
+              
+            </div>
+          </div>
+
+          <img src="./assets/icons/share.svg" (click)="copyToClipboard('bala')">
+        </div>
+        <div class="timeline-image">
+          <img  src={{timeline.images}}/>
+        </div>
+        <div class="timeline-footer">
+         
+      
+          <!-- <div id="rating">
+              <span (mouseleave)="default()" (mouseover)="display(1)" (click)="clicked(1)" id="1">&#9733;</span>
+              <span (mouseleave)="default()" (mouseover)="display(2)" (click)="clicked(2)" id="2">&#9733;</span>
+              <span (mouseleave)="default()" (mouseover)="display(3)" (click)="clicked(3)" id="3">&#9733;</span>
+              <span (mouseleave)="default()" (mouseover)="display(4)" (click)="clicked(4)" id="4">&#9733;</span>
+              <span (mouseleave)="default()" (mouseover)="display(5)" (click)="clicked(5)" id="5">&#9733;</span>
+              </div> -->
+        </div>
+      </div>
+    </li>
+  </ul>
+</div>
+</div>

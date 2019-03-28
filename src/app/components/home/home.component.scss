@@ -1,0 +1,25 @@
+.scrolling-wrapper {
+    overflow-x: unset;
+    overflow-y: hidden;
+    white-space: nowrap;
+    background-color: black;
+    color:black;
+}
+    .card {
+        position: relative;
+      display: inline-block;
+  
+      height: 100px;
+      width:100px;
+      border-radius:5px;
+      margin: 5px 2.5px 
+  }
+  #card{
+      position: absolute;
+    
+
+  }
+  label{
+      font-weight: bold;
+  }
+  .scrolling-wrapper:-webkit-scrollbar { width: 0 !important }

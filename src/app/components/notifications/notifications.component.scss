@@ -1,0 +1,11 @@
+img{
+    height: 40px;
+    width:40px;
+    padding:10px;
+}
+div{
+    height: 60px;
+    background-color: rgba(0,220,0,0.5);
+    border:1px solid black;
+    width:calc(100% - 2px);
+}

@@ -1,0 +1,30 @@
+
+<label >contest 1</label>
+<div class="scrolling-wrapper" >     
+        <img class="card" *ngFor="let a of contest1" src="./assets/images/contest_1/image_{{a}}.jpg">
+        <div class="card" style="background-color:rgba(255, 255, 255, 0.25) "><label id="card">10+ More</label> </div>
+</div>
+
+<label (click)="contest()">contest 2</label>
+<div class="scrolling-wrapper">
+        <img class="card" *ngFor="let a of contest2" src="./assets/images/contest_2/image_{{a}}.jpg">
+
+  </div>
+
+
+
+
+<label >contest 3</label>
+<div class="scrolling-wrapper">
+        <img class="card" *ngFor="let a of contest3" src="./assets/images/contest_3/image_{{a}}.jpg">
+</div>
+
+<input type="text" id="rating" >
+<button (click)="upload()">upload</button>
+<!-- <div id="rating">
+<span (mouseleave)="default()" (mouseover)="display(1)" (click)="clicked(1)" id="1">&#9733;</span>
+<span (mouseleave)="default()" (mouseover)="display(2)" (click)="clicked(2)" id="2">&#9733;</span>
+<span (mouseleave)="default()" (mouseover)="display(3)" (click)="clicked(3)" id="3">&#9733;</span>
+<span (mouseleave)="default()" (mouseover)="display(4)" (click)="clicked(4)" id="4">&#9733;</span>
+<span (mouseleave)="default()" (mouseover)="display(5)" (click)="clicked(5)" id="5">&#9733;</span>
+</div> -->

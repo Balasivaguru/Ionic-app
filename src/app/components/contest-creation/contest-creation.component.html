@@ -1,0 +1,23 @@
+<p>
+  contest-creation works!
+</p>
+<button (click)="edit()">edit</button>
+
+<form [formGroup]="contests">
+  <label for="name">Contest Name</label><br>
+  <input type="text" id="name" formControlName="contest_name" required><br>
+  <label for="">Startline</label><br>
+  <input type="date" formControlName="contest_startline"><br>
+  <label for="">Deadline</label><br>
+  <input type="date" formControlName="contest_deadline"><br>
+  <label for="">Theme</label><br>
+  <input type="text" formControlName="contest_theme"><br>
+  <label for="">Jury Details</label><br>
+  <label for="">Name</label><br>
+  <input type="text" formControlName="name"><br>
+  <label for="">Mail-id</label><br>
+  <input type="text" formControlName="mail"><br>
+  <button (click)="create()">Confirm</button>
+  
+</form>
+<button (click)="delete()">Delete</button>

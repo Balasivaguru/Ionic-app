@@ -1,0 +1,39 @@
+<form class="loginEmail" *ngIf=canEnterEmail [formGroup]="loginEmail" (ngSubmit)="enteredEmail()"> 
+    <label> 
+    Email Address:
+    <input name="email" type="email" formControlName="email" autocomplete="on">
+    </label>
+    
+    <button type="submit" [disabled]="!loginEmail.valid">Submit Email Address</button>
+    
+    </form>
+    
+    
+    
+    <form class="loginPassword" *ngIf=canEnterPassword [formGroup]="loginPassword" (ngSubmit)="enteredPassword()"> 
+    <label> 
+    Enter password
+    <input type="password" formControlName="password">
+    </label>
+    <button type="submit" [disabled]="!loginPassword.valid">Submit password</button>
+    </form>
+    
+    
+    <form class="createPassword" *ngIf=toCreatePassword [formGroup]="createPassword" (ngSubmit)="createdPassword()"> 
+    <label> 
+    Create password
+    <input type="password" formControlName="password">
+    </label>
+    <button type="submit" [disabled]="!createPassword.valid">Create password</button>
+    </form>
+    
+    
+    
+    <form class="confirmPassword" *ngIf=toConfirmPassword [formGroup]="confirmPassword" (ngSubmit)="confirmedPassword()"> 
+    <label> 
+    Confirm password
+    <input type="password" formControlName="password">
+    </label>
+    <p *ngIf=noMatch>Passwords do not match</p>
+    <button type="submit" [disabled]="!confirmPassword.valid">Submit password</button>
+    </form>

@@ -1,0 +1,24 @@
+<!-- <div id="page">
+   
+  
+</div> -->
+
+<div id="menubar">
+  <img id="home" (click)="home();sidenav.status=false" src="./assets/icons/home.svg">
+  <img id="notifications" (click)="notify();sidenav.status=false" src="./assets/icons/notifications.svg">
+  <label for="add">
+  <img  src="./assets/icons/add.svg" >
+  </label>
+  <input type="file" id="add" [(ngModel)]="file" (change)="add();sidenav.status=false" accept=".jpg,.jpeg,.png">
+  <img id="profile" (click)="profile();sidenav.status=false" src="./assets/icons/profile.svg">
+  <img id="menu" (click)="sidenav.status=true" src="./assets/icons/menu.svg">
+</div>
+<app-home *ngIf="this.router.url == '/home' && this.mail" ></app-home>
+<app-notifications *ngIf="this.router.url == '/notifications'" ></app-notifications>
+<app-add *ngIf="this.router.url == '/add'"></app-add>
+<app-profile *ngIf="this.router.url == '/profile' || this.router.url == '/profile/name' " ></app-profile>
+<app-menu *ngIf="sidenav.status"></app-menu>
+<div id="loadingscreen" *ngIf="this.data.loading">
+<label for="loading">Loading Please wait...</label>
+
+</div>

@@ -1,0 +1,62 @@
+.example-container {
+    width: 360px;
+    height: 592px;
+  }
+
+.mat-drawer:not(.mat-drawer-side){
+  box-shadow: none;
+}
+#add{
+  height:60px ;
+  width:60px;
+}
+.icon{
+  height:40px;
+  width:40px;
+  padding:10px;
+}
+
+mat-drawer:hover{
+cursor: pointer;
+}
+
+#menubar{
+  position: fixed;
+  bottom:0%;
+
+  background-color: rgba(156, 247, 247, 0.815);
+  width: 360px;
+}
+mat-tab-group{
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: column-reverse;
+          flex-direction: column-reverse;
+}
+mat-tab{
+  height: 100px;
+}
+
+#photo{
+  display: none;
+}
+#text{
+  color:blue;
+  size:10px;
+}
+.mess{
+  border:2px solid;
+  font-size:20px;
+  height: 60px;
+}
+img{
+  width:25px;
+  height: 25px;
+}
+span{
+  position: relative;
+  top:-40px;
+}

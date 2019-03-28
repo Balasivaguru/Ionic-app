@@ -1,0 +1,31 @@
+<div id="side" (click)="sidenav.status=false"></div>
+<div id="sidebar" style="color:white">
+  <div class="flip-box">
+    <div id="flip-box-inner">
+      <div class="profilepic">
+        <div class="bluecircle">
+          <div class="whitecircle">
+            <a href="./assets/images/user/anga.png">
+              <img src="./assets/images/user/anga.png" class="image" />
+            </a>
+          </div>
+        </div>
+        <label (click)="flip(1)" style="color:white">Edit Profile</label>
+      </div>
+      <div class="editprofile">
+        <h2>Follow Noufal</h2>
+        <a href="https://www.facebook.com/noufal.shafeeq"><img src=""></a>
+        <a href="https://www.instagram.com/noufal_shafeeq"><img src=""></a>
+        <label for="user_name">User name</label>
+        <input type="text" id="user_name">
+      </div>
+    </div>
+  </div>
+  <ul>
+    <li></li>
+    <li>Notifications</li>
+    <li>Faq</li>
+    <li class="logout"><label for="logout">Logout</label>
+      <img id="logout" src="./assets/icons/logout.svg" (click)="flip(2)"></li>
+  </ul>
+</div>
